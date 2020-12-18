@@ -6,20 +6,18 @@
     <body>
     	<div align="center">
     	<h1>She-Ra Fic Recomendation</h1>
-    	{% if rec %}
     	<p> Enter title of fic: </p>
-    	{% endif %}
 	<form method="POST">
     	<input name="fic_name">
     	<input type="submit">
 	</form>
+    {% if fic_name %}
      <h2> Recomendations for {{fic_name}} </h2>
-	  <p> Top Recomendation: {{rec}} </p>
-
-{% for table in tables %}
+            {% for table in tables %}
             {{titles[loop.index]}}
             {{ table|safe }}
-{% endfor %}
+            {% endfor %}
+            {% endif %}
 
 	  <div>
     </body>
