@@ -11,4 +11,6 @@ urllib3==1.26.2
 Werkzeug==1.0.1
 gunicorn
 numpy
+retry
 pandas
+-e git+https://github.com/mcmanustfj/ao3.git#egg=ao3
