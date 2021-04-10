@@ -6,19 +6,18 @@
     <body>
     	<div align="center">
     	<h1>She-Ra Fic Recomendation</h1>
-    	<p> Enter title of fic: </p>
+    	<p> Enter ID of fic: </p>
 	<form method="POST">
     	<input name="fic_name">
     	<input type="submit">
 	</form>
     {% if fic_name %}
-     <h2> Recomendations for {{fic_name}} </h2>
+     <h2> Recomendations for "{{fic_name}}" </h2>
             {% for table in tables %}
             {{titles[loop.index]}}
             {{ table|safe }}
             {% endfor %}
             {% endif %}
-
 	  <div>
     </body>
 </html>

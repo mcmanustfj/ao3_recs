@@ -15,4 +15,6 @@ retry
 pandas
 ratelimiter
 sqlalchemy
+networkx
+flask_session
 -e git+https://github.com/mcmanustfj/ao3.git#egg=ao3
